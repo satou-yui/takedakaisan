@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$main-font: dnp-shuei-mincho-pr6, sans-serif;
+$sub-font: 'Kiwi Maru', serif;
+$font-color: #ffff;
+$subfont-color: #2A4073;
+$main-color: #455373;
+$sub-color: #263966;
+
+
+@mixin tb {
+  @media screen and (min-width: $tb-max) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: $pc-max) {
+    @content;
+  }
+}
