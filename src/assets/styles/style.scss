@@ -1,6 +1,8 @@
-.aa {
-  color: pink;
-  &aa {
-    color: red;
-  }
-}
+@charset "UTF-8";
+@import "foundations/variable";
+@import "foundations/reset";
+@import "foundations/base";
+@import "layout/**";
+@import "object/**";
+@import "project/**";
+@import "utility/**";
