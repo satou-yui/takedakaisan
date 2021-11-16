@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.c-nav {
+  width: 50%;
+  height: 100%;
+  &-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &__item {
+      font-size: 1.3em;
+      width: 140px;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      margin-left: 25px;
+    }
+  }
+}
