@@ -2,13 +2,14 @@
 
 .p-services {
   width: 100%;
-  height: 980px;
+  height: 123vh;
+  ;
   background: linear-gradient(-37deg, #fff 0%, #fff 79.7%, $main-color 21.7%, $main-color 100%);
   position: relative;
   
   //  img
   &__img {
-    position: relative;
+    
 
     &--kani-top {
     transform: rotate(-20deg);
@@ -16,7 +17,7 @@
       position: absolute;
       width: 250px;
       top: -150px;
-      left: 85px;
+      left: 7%;
       }
     }
 
@@ -24,7 +25,7 @@
       & img {
         position: absolute;
         width: 450px;
-        top: 100px;
+        top: 18%;
         left: 51%;
         transform: translateX(-49%);
         -webkit-transform: translateX(-49%);
@@ -36,7 +37,7 @@
       & img {
         position: absolute;
         width: 300px;
-        top: 740px;
+        bottom: -5%;
         right: 80px;
         z-index: 10;
         }
@@ -48,18 +49,18 @@
     color: $subfont-color;
     font-weight: 500;
     font-size: 1.2em;
-    width: 750px;
+    width: 735px;
     margin: 480px auto 0;
     letter-spacing: 7px;
-    line-height: 2.5;
+    line-height: 2.4;
     
     &::after {
       content: "";
       position: absolute;
       width: 100%;
-      height: 500px;
+      padding-bottom: 34.68%;
       background: url(../images/top-overview-under.png) no-repeat;
-      background-size: cover;
+      background-size: auto 100%;
       background-position: center top;
       left: 0;
       bottom: 0px;
