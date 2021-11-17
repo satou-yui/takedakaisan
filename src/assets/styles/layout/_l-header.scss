@@ -9,16 +9,15 @@
   background: linear-gradient(-40deg, $main-color 0%, $main-color 52%, #fff 48%, #fff 100%);
   
   &__wrapper {
-    width: 93%;
-    margin: 0 auto;
     display: flex;
   }
   &__logo {
     width: 50%;
     padding-top: 10px;
     align-items: center;
+    margin-left: 25px;
     & img {
-      width: 220px;
+      width: 30%;
     }
   }
 }
