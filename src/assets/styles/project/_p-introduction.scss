@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.p-introduction {
+  width: 100%;
+  &__wrapper {
+    display: flex;
+    &--column {
+      flex-flow: row-reverse;
+    }
+    &--bg-color01 {
+      background: $main-color;
+    }
+    &--bg-color02 {
+      background: $sub-color;
+    }
+  }
+  &__img {
+    width: 50%;
+    & img {
+      width: 100%;
+    }
+  }
+  &__text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    line-height: 2.4;
+  }
+}
