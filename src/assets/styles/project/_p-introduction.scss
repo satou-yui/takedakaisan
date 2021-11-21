@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use '../global' as g;
+
 .p-introduction {
   width: 100%;
   &__wrapper {
@@ -8,10 +10,10 @@
       flex-flow: row-reverse;
     }
     &--bg-color01 {
-      background: $main-color;
+      background: g.$main-color;
     }
     &--bg-color02 {
-      background: $sub-color;
+      background: g.$sub-color;
     }
   }
   &__img {

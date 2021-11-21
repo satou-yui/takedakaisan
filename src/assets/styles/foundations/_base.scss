@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@use '../global' as g;
 
 body {
-  font-family: $main-font;
-  color: $font-color;
+  font-family: g.$main-font;
+  color: g.$font-color;
   font-weight: 500;
 }

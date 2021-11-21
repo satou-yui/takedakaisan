@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use '../global' as g;
+
 .p-services {
   width: 100%;
   height: 69vw;
@@ -12,7 +14,7 @@
     position: absolute;
     width: 560px;
     height: 420px;
-    background: linear-gradient(-37deg, #fff 0%, #fff 50%, $main-color 50%, $main-color 100%);
+    background: linear-gradient(-37deg, #fff 0%, #fff 50%, g.$main-color 50%, g.$main-color 100%);
     padding: 40px 70px;
   }
   &__contents {
@@ -61,7 +63,7 @@
     -ms-transform: translateX(-50%);
 
     text-align: center;
-    color: $subfont-color;
+    color: g.$subfont-color;
     font-size: 1.2em;
     width: 735px;
     margin: 0 auto;

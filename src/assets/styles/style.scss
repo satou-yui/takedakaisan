@@ -1,8 +1,7 @@
-@charset "UTF-8";
-@import "foundations/variable";
-@import "foundations/reset";
-@import "foundations/base";
-@import "layout/**";
-@import "object/**";
-@import "project/**";
-@import "utility/**";
+
+@use "foundations";
+@use "layout";
+@use "object/component";
+@use "project";
+@use "utility";
+

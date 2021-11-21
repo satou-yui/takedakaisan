@@ -1,12 +1,13 @@
 const {watch, series, parallel, src, dest, lastRun, task } = require('gulp');
 const sass = require('gulp-sass')(require("sass"));
+const sassGlob = require('gulp-sass-glob-use-forward');
 const imagemin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant = require('imagemin-pngquant');
 const browserSync = require('browser-sync').create();
 const prettify = require('gulp-prettify');
 const del = require('del');
-const sassGlob = require("gulp-sass-glob");
+// const sassGlob = require("gulp-sass-glob");
 
 // HTML整形
 const htmlFormat = (done) => {
@@ -128,4 +129,3 @@ task('imageMin', () => {
   watch('./src/assets/images/*.{jpg,jpeg,png,svg,gif,ico}')
     .on('add', series(imageMin, browserReload));
 });
-
