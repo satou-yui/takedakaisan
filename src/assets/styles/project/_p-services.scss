@@ -9,65 +9,64 @@
   background: url(../images/top-overview-under.png) no-repeat;
   background-size: contain;
   background-position: bottom;
+}
 
-  &__back {
+.p-services__back {
+  position: absolute;
+  width: 560px;
+  height: 420px;
+  background: linear-gradient(-37deg, #fff 0%, #fff 50%, g.$main-color 50%, g.$main-color 100%);
+  padding: 40px 70px;
+}
+
+.p-services__contents {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 73vw;
+}
+.p-services__img {
+  &--kani-top {
     position: absolute;
-    width: 560px;
-    height: 420px;
-    background: linear-gradient(-37deg, #fff 0%, #fff 50%, g.$main-color 50%, g.$main-color 100%);
-    padding: 40px 70px;
-  }
-  &__contents {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 73vw;
-
-  }
-  &__img {
-    &--kani-top {
-      position: absolute;
-      transform: rotate(-18deg);
-      width: 250px;
-      top: 120px;
-      left: 100px;
-    }
-
-    &--hokkaidou {
-      position: absolute;
-      width: 520px;
-      top: 150px;
-      left: 51%;
-      transform: translateX(-49%);
-      -webkit-transform: translateX(-49%);
-      -ms-transform: translateX(-49%);
-    }
-
-    &--kani-bottom {
-      position: absolute;
-      width: 300px;
-      bottom: 0;
-      right: 80px;
-      z-index: 10;
-      }
+    transform: rotate(-18deg);
+    width: 250px;
+    top: 120px;
+    left: 100px;
   }
 
-  &__text {
+  &--hokkaidou {
     position: absolute;
-    top:600px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-
-    text-align: center;
-    color: g.$subfont-color;
-    font-size: 1.2em;
-    width: 735px;
-    margin: 0 auto;
-    letter-spacing: 7px;
-    line-height: 2.4;
+    width: 520px;
+    top: 150px;
+    left: 51%;
+    transform: translateX(-49%);
+    -webkit-transform: translateX(-49%);
+    -ms-transform: translateX(-49%);
   }
+
+  &--kani-bottom {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    right: 80px;
+    z-index: 10;
+    }
+}
+
+.p-services__desc {
+  position: absolute;
+  top:600px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  text-align: center;
+  color: g.$subfont-color;
+  font-size: 1.2em;
+  width: 735px;
+  margin: 0 auto;
+  letter-spacing: 7px;
+  line-height: 2.4;
 }
