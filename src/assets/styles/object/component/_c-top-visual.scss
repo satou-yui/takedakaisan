@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.c-top-visual {
+  width: 100%;
+}
+
+.c-top-visual__img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: top;
+}
