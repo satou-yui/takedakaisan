@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.p-company {
+  margin-bottom: 100px;
+  &__heading {
+    font-size: 1.55em;
+    margin-bottom: 20px;
+  }
+}
