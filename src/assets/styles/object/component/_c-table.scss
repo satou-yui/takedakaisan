@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@use '../../global' as g;
+
+.c-table {
+  padding: 0 40px;
+  font-size: 1.15em;
+  letter-spacing: 3px;
+  &__wrapper {
+    border-bottom: 1px solid rgb(155, 155, 155);
+  }
+  &__heading {
+    font-weight: normal;
+    width: 160px;
+    padding: 13px 0 3px;
+  }
+  &__desc {
+    padding-top: 13px;
+  }
+}
+
