@@ -6,6 +6,7 @@
   background: url(../images/guradietionhaikei.png)no-repeat;
   background-size: cover;
   position: relative;
+  color: #000;
 }
 .c-contents-wrapper {
   background: rgba(255, 255, 255, 0.788);
@@ -28,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: g.$font-color;
   & span {
     display: block;
     transform: skewX(20deg);
