@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@use '../global' as g;
+
+.p-header {
+    display: flex;
+}
+.p-header__logo {
+  width: 50%;
+  padding-top: 10px;
+  align-items: center;
+  margin-left: 25px;
+  & img {
+    width: 30%;
+  }
+}
