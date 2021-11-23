@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@use '../global' as g;
+
+.p-footer__logo {
+  padding: 30px;
+}
+
+.p-footer__nav {
+  width: 650px;
+  margin: 0 auto;
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &__item {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      border-right: 1px solid g.$font-color;
+      
+  
+      & a {
+        padding: 0 35px;
+        transition: all .3s;
+        &:hover {
+          color: rgb(160, 160, 160);
+        }
+      }
+
+      /* border,padding調整 */
+      &:nth-child(4) {
+        border-right: none;
+      }
+      &:last-child {
+        border-right: none;
+      }
+      &:last-child a {
+        padding-right: 0;
+      }
+    }
+    
+  }
+}
+
+.p-footer__copy {
+  font-size: 1.3em;
+  line-height: 3;
+}
