@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@use "../../global" as g;
+
+.c-heading-back {
+  position: absolute;
+  top: -30px;
+  // left: 37%;
+  background: g.$sub-color;
+  width: 400px;
+  height: 70px;
+  transform: skewX(-20deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: g.$font-color;
+  & span {
+    display: block;
+    transform: skewX(20deg);
+  }
+}
