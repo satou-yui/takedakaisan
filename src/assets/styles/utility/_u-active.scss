@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+@use "../global" as g;
+
 .u-active {
-  color: #EF6000;
-  border-bottom: 1px solid #EF6000;
+  color: g.$accent-color;
+  border-bottom: 1px solid g.$accent-color;
 }
