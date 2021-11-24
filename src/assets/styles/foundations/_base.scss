@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @use '../global' as g;
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: g.$main-font;
   color: g.$font-color;
