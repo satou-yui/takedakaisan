@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.p-finish {
+  text-align: center;
+  font-size: 1.7em;
+  letter-spacing: 8px;
+  margin-bottom: 50px;
+  &-detail {
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    margin-bottom: 70px;
+  }
+  &__top-link {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+}
