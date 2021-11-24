@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.u-accent {
+  color: g.$accent-color;
+}
