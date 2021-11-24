@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@use "../global" as g;
+
+.p-access {
+  width: 100%;
+  &-wrapper {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.p-access__info {
+  margin-bottom: 80px;
+  &-table {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+.p-access__map {
+  width: 100%;
+}
