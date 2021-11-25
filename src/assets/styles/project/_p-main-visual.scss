@@ -9,8 +9,7 @@
     height: auto;
   }
   @include g.small {
-    height: 30vh;
-    padding-top: 5vh;
+    padding-top: 70px;
   }
   & img {
     width: 100%;

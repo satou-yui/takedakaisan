@@ -6,6 +6,9 @@
   &__heading {
     font-size: 1.55em;
     margin-bottom: 20px;
+    @include g.small {
+      font-size: 1.3em;
+    }
   }
   &-wrapper {
     &--profile {

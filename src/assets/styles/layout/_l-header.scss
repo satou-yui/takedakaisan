@@ -14,7 +14,7 @@
     background: linear-gradient(-40deg, g.$main-color 0%, g.$main-color 56%, #fff 33%, #fff 100%);
   }
   @include g.small {
-    height: auto;
+    height: 70px;
     background: linear-gradient(-40deg, g.$main-color 0, g.$main-color 50%, #fff 50%, #fff 100%);
     position: fixed;
     z-index: 999;

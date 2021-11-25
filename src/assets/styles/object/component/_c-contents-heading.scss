@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+@use "../../global/" as g;
 
 .c-contents-heading {
   font-size: 1.55em;
   letter-spacing: 10px;
-  
+  @include g.small {
+    font-size: 1.3em;
+  }
 }

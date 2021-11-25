@@ -14,6 +14,15 @@
   align-items: center;
   justify-content: center;
   color: g.$font-color;
+  @include g.tb {
+    height: 60px;
+  }
+  @include g.small {
+    width: 60%;
+    min-width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
   & span {
     display: block;
     transform: skewX(20deg);

@@ -7,6 +7,10 @@
   &-wrapper {
     margin-top: 110px;
     margin-bottom: 150px;
+    @include g.small {
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
   }
 }
 
@@ -15,12 +19,23 @@
   margin-bottom: 70px;
   font-size: 1.55em;
   letter-spacing: 4px;
+  @include g.small {
+    font-size: 1em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
 }
 
 .p-point__nav {
   width: 630px;
   margin: 0 auto;
   position: relative;
+  @include g.tb {
+    width: 410px;
+  }
+  @include g.small {
+    width: 282px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -29,6 +44,16 @@
     top: 130px;
     left: -10vw;
     background: g.$main-color;
+    @include g.tb {
+      top: 100px;
+      width: 7vw;
+      left: -7vw;
+    }
+    @include g.small {
+      top: 65px;
+      width: 6vw;
+      left: -6vw;
+    }
   }
   &::after {
     content: "";
@@ -38,6 +63,16 @@
     top: 130px;
     right: -10vw;
     background: g.$main-color;
+    @include g.tb {
+      top: 100px;
+      width: 7vw;
+      right: -7vw;
+    }
+    @include g.small {
+      top: 65px;
+      width: 6vw;
+      right: -6vw;
+    }
   }
   &__list {
     position: absolute;
@@ -48,27 +83,65 @@
     color: g.$font-color;
     padding-left: 10px;
     transition: all .3s;
-    &::nth-child(1) {
+    @include g.tb {
+      width: 150px;
+      height: 95px;
+    }
+    @include g.small {
+      width: 110px;
+      height: 70px;
+    }
+    &:nth-child(1) {
       top: 0;
       left: 0;
+      
     }
     &:nth-child(2) {
       top: 0;
       left: 270px;
+      @include g.tb {
+        left: 170px;
+      }
+      @include g.small {
+        left: 120px;
+      }
     }
     &:nth-child(3) {
       top: 120px; 
       left: 135px;
+      @include g.tb {
+        top: 80px;
+        left: 85px;
+      }
+      @include g.small {
+        top: 60px;
+        left: 60px;
+      }
     }
     &:nth-child(4) {
       top: 120px;
       left: 405px;
+      @include g.tb {
+        top: 80px;
+        left: 260px;
+      }
+      @include g.small {
+        top: 60px;
+        left: 180px;
+      }
     }
     & a {
       display: block;
       text-align: center;
       padding-top: 50px;
       height: 100%;
+      @include g.tb {
+        padding-top: 30px;
+        font-size: .85em;
+      }
+      @include g.small {
+        padding-top: 20px;
+      }
     }
     &:hover{
       background:url(../images/factory-accent-hover.png);

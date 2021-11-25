@@ -4,12 +4,23 @@
 
 .c-top-visual {
   width: 100%;
+  height: 400px;
+  @include g.tb {
+    height: auto;
+  }
+  @include g.small {
+    
+    padding-top: 70px;
+  }
 }
 
 .c-top-visual__img {
   width: 100%;
-  height: 340px;
+  height: 100%;
   object-fit: cover;
-  object-position: top;
-  
+  object-position: center;
+  // @include g.tb {
+  //   height: 100%;
+    
+  // }
 }

@@ -12,6 +12,8 @@
   }
   @include g.small {
     padding: 0;
+    letter-spacing: 1px;
+    font-size: 1em;
   }
   & table {
     @include g.tb {
@@ -27,7 +29,7 @@
     width: 160px;
     padding: 13px 0 3px;
     @include g.tb {
-      width: 30%;
+      width: 35%;
     }
   }
   &__desc {

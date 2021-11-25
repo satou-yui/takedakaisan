@@ -7,6 +7,13 @@
   &-wrapper {
     width: 75%;
     margin: 200px auto 0;
+    @include g.tb {
+      margin-top: 100px;
+      width: 90%;
+    }
+    @include g.medium {
+      width: 100%;
+    }
   }
 }
 
@@ -17,19 +24,36 @@
   margin-bottom: 50px;
   padding: 20px;
   height: 310px;
+  @include g.medium {
+    display: block;
+    height: auto;
+  }
   &:nth-child(even) .p-info__item-text {
     padding-left: 40px;
     padding-right: 7px;
+    @include g.medium {
+      padding: 0;
+    }
   }
   
   &-text {
     width: 50%;
     padding: 0 20px 0 10px;
+    @include g.tb {
+      padding-top: 0px;
+    }
+    @include g.medium {
+      width: auto;
+    }
     &__heading {
       font-size: 1.9em;
       letter-spacing: 8px;
       position: relative;
       margin-bottom: 15px;
+      @include g.medium {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
       &::after {
         content: "";
         position: absolute;
@@ -38,6 +62,14 @@
         top: 22px;
         left: 85px;
         background: g.$font-color;
+        @include g.tb {
+          width: 60%;
+        }
+        @include g.medium {
+          width: 160px;
+          top: 16px;
+          left: 66px;
+        }
       }
     }
     &__desc {
@@ -45,15 +77,38 @@
       text-align: justify;
       padding-left: 20px;
       letter-spacing: 4.5px;
+      @include g.tb {
+        width: 100%;
+      }
+      @include g.medium {
+        font-size: 1em;
+        padding-left: 15px;
+      }
+      @include g.small {
+        
+        letter-spacing: 3.87px;
+        font-size: .9em;
+        line-height: 1.2;
+      }
     }
   }
   &-img {
     width: 50%;
     // padding: 20px;
+    @include g.medium {
+      width: 100%;
+      padding-top: 20px;
+    }
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include g.medium {
+        height: 400px;
+      }
+      @include g.small {
+        height: 100%;
+      }
     }
   }
 }

@@ -7,6 +7,7 @@
   margin: 0 auto;
   padding: 20px;
   @include g.tb {
-    width: 93%;
+    width: auto;
+    padding: 5px;
   }
 }
