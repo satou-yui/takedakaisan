@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+@include g.small {
+  .u-sp-display-block {
+    display: none;
+  }
+}

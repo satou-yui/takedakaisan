@@ -5,12 +5,36 @@
 .p-g-nav {
   width: 50%;
   height: 100%;
+  @include g.tb {
+    width: 57%;
+  }
+  @include g.small {
+    position:fixed;
+    z-index: 999;
+    top:0;
+    right: -120%;
+    width:100%;
+    height: 100vh;
+    background:#455373fa;
+    transition: all 0.6s;
+    &.panelactive {
+      right: -20%;
+      top: 8vh;
+    }
+  }
   &-list {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-right: 25px;
+    @include g.tb {
+      margin-right: 5px;
+    }
+    @include g.small {
+      display: block;
+      width: 65%;
+    }
     &__item {
       font-size: 1.3em;
       width: 140px;
@@ -18,7 +42,20 @@
       border-bottom: 1px solid #fff;
       margin-left: 25px;
       position: relative;
-    &::after {
+      @include g.tb {
+        font-size: 1em;
+        margin-left: 5px;
+        width: 23%;
+      }
+      @include g.small {
+        text-align: left;
+        width: 100%;
+        margin: 10px 0 10px;
+        border-left: none;
+        padding: 0;
+      }
+
+      &::after {
         content: '';
         // display: block;
         /*絶対配置で線の位置を決める*/
@@ -33,11 +70,19 @@
         transition: all .3s;
         transform: scale(0, 1);/*X方向0、Y方向1*/
         transform-origin: center top;/*上部中央基点*/
-    }
-    &:hover::after {
-      transform-origin: left top;
-      transform: scale(1, 1);
       }
+      &:hover::after {
+        transform-origin: left top;
+        transform: scale(1, 1);
+      }
+    }
+    @include g.small {
+      color: #fff;
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      margin-left: 30px;
     }
     & a {
       display: block;
@@ -45,6 +90,52 @@
       &:hover {
         color: g.$accent-color;
       }
+    }
+  }
+}
+
+@include g.small {
+  .p-g-nav-openbtn {
+    position:fixed;
+    z-index: 9999;
+    top:10px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    
+    & span{
+      display: inline-block;
+      transition: all .4s;
+      position: absolute;
+      left: 14px;
+      height: 3px;
+      border-radius: 2px;
+      background: #fff;
+      width: 45%;
+      &:nth-of-type(1) {
+        top:15px;	
+      }
+      &:nth-of-type(2) {
+        top:25px;
+      }
+      &:nth-of-type(3) {
+        top:35px;
+      }
+    }
+    &.active span:nth-of-type(1) {
+      top: 8px;
+      left: 30px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+    }
+    &.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+    &.active span:nth-of-type(3){
+      top: 20px;
+      left: 30px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
     }
   }
 }

@@ -5,4 +5,7 @@
 .c-heading {
   font-size: 1.7em;
   letter-spacing: 15px;
+  @include g.small {
+    font-size: 1.4em;
+  }
 }

@@ -8,15 +8,7 @@ $main-color: #455373;
 $sub-color: #263966;
 $footer-color: #131D33;
 $accent-color: #EF6000;
+$mobile-max: 620px;
+$tablet-max: 1260px;
 
-@mixin tb {
-  @media screen and (min-width: $tb-max) {
-    @content;
-  }
-}
 
-@mixin pc {
-  @media screen and (min-width: $pc-max) {
-    @content;
-  }
-}

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use '../../global' as g;
+
 .c-top-visual {
   width: 100%;
 }
@@ -9,4 +11,5 @@
   height: 340px;
   object-fit: cover;
   object-position: top;
+  
 }

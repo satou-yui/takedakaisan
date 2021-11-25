@@ -15,10 +15,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  @include g.small {
+    display: block;
+  }
   &__list {
     width: 48.5%;
     margin-bottom: 1%;
     position: relative;
+    @include g.small {
+      width: 95%;
+      margin: 0 auto 1%;
+    }
     & a {
       display: block;
     }
@@ -47,4 +54,10 @@
 .p-toc__category__list:last-child,
 .p-toc__category__list:nth-child(3) {
   margin-bottom: 0;
+}
+
+@include g.small {
+  .p-toc__category__list:nth-child(3) {
+    margin-bottom: 1%;
+  }
 }

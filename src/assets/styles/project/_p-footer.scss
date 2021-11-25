@@ -4,25 +4,50 @@
 
 .p-footer__logo {
   padding: 30px;
+  & img {
+    @include g.small {
+      width: 150px;
+    }
+  }
 }
 
 .p-footer__nav {
   width: 650px;
   margin: 0 auto;
+  @include g.tb {
+    width: 620px;
+  }
+  @include g.small {
+    width: 80%;
+  }
   &-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    @include g.small {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &__item {
       margin-bottom: 20px;
       font-size: 1.1em;
       border-right: 1px solid g.$font-color;
-      
+      @include g.small {
+        font-size: 1em;
+        border-right: none;
+        border-left:  1px solid g.$font-color;
+        margin-bottom: 10px;
+      }
   
       & a {
         padding: 0 35px;
         transition: all .3s;
+        @include g.tb {
+          // padding: 0 4.5vw;
+        }
+        @include g.small {
+          padding: 0 5px;
+        }
         &:hover {
           color: rgb(160, 160, 160);
         }
@@ -46,4 +71,7 @@
 .p-footer__copy {
   font-size: 1.3em;
   line-height: 3;
+  @include g.small {
+    font-size: 1.1em;
+  }
 }

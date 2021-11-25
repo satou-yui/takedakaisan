@@ -5,6 +5,13 @@
 
 .p-main-visual {
   height: 80vh;
+  @include g.tb {
+    height: auto;
+  }
+  @include g.small {
+    height: 30vh;
+    padding-top: 5vh;
+  }
   & img {
     width: 100%;
     height: 100%;

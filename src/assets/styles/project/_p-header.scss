@@ -10,7 +10,16 @@
   padding-top: 10px;
   align-items: center;
   margin-left: 25px;
+  @include g.tb {
+    width: 43%;
+  }
+  @include g.small {
+    margin-left: 0;
+  }
   & img {
-    width: 30%;
+    width: 180px;
+    @include g.small {
+      width: 130px;
+    }
   }
 }
