@@ -6,6 +6,19 @@
   padding: 0 40px;
   font-size: 1.15em;
   letter-spacing: 3px;
+  @include g.tb {
+    padding: 0 10px;
+    font-size: 1.1em;
+  }
+  @include g.small {
+    padding: 0;
+  }
+  & table {
+    @include g.tb {
+      width: 98%;
+      margin: 0 auto;
+    }
+  }
   &__item {
     border-bottom: 1px solid #707070;
   }
@@ -13,9 +26,15 @@
     font-weight: normal;
     width: 160px;
     padding: 13px 0 3px;
+    @include g.tb {
+      width: 30%;
+    }
   }
   &__desc {
     padding-top: 13px;
+    @include g.tb {
+      font-size: .9em;
+    }
   }
 }
 

@@ -16,6 +16,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include g.small {
+    width: 90%;
+  }
 }
 
 // .p-contents__heading-back {

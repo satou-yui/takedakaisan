@@ -18,6 +18,9 @@
   }
   & img {
     width: 180px;
+    @include g.tb {
+      width: 165px;
+    }
     @include g.small {
       width: 130px;
     }

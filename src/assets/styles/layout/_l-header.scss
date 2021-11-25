@@ -10,7 +10,7 @@
   justify-content: center;
   background: linear-gradient(-40deg, g.$main-color 0%, g.$main-color 52%, #fff 48%, #fff 100%);
   @include g.tb {
-    height: 10vh;
+    height: 11vh;
     background: linear-gradient(-40deg, g.$main-color 0%, g.$main-color 56%, #fff 33%, #fff 100%);
   }
   @include g.small {

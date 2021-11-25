@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+@use "../../global/" as g;
+
 .c-contents-inner {
   width: 75%;
   margin: 0 auto;
   padding: 20px;
+  @include g.tb {
+    width: 93%;
+  }
 }
