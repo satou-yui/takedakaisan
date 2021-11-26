@@ -19,7 +19,7 @@ const htmlFormat = (done) => {
         unformatted: ['a', 'span', 'br'],
       }),
     )
-    .pipe(dest('./dist/'));
+    .pipe(dest('./docs/'));
     done();
 }
 
@@ -31,7 +31,7 @@ const compileSass = (done) => {
       sass({outputStyle: 'compressed'})
       .on('error', sass.logError)
     )
-    .pipe(dest("./dist/assets/styles"));
+    .pipe(dest("./docs/assets/styles"));
     done();
 }
 
@@ -50,14 +50,14 @@ const imageMin = (done) => {
           imagemin.gifsicle({ optimizationLevel: 3 }) // 圧縮率
         ])
       )
-      .pipe(dest('./dist/assets/images'));
+      .pipe(dest('./docs/assets/images'));
       done();
 }
 
 // jsコピー
 const copyjs = (done) => {
   src('src/assets/js/*.js')
-    .pipe(dest("./dist/assets/js"));
+    .pipe(dest("./docs/assets/js"));
     done();
 }
 
@@ -66,7 +66,7 @@ const initBrowsersync = (done) => {
   browserSync.init({
     port: 8080,
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
       index: 'index.html',
     },
     reloadOnRestart: true,
@@ -106,14 +106,14 @@ const watchFiles = (done) =>{
     './src/**/*.html'
     ])
     .on('unlink', (event) => {
-      const path = event.replace('src', 'dist');
+      const path = event.replace('src', 'docs');
       del(path);
     });
 
   // scssファイル削除時
   watch('./src/assets/styles/**/*.scss')
     .on('unlink', (event) => {
-      let path = event.replace('src', 'dist');
+      let path = event.replace('src', 'docs');
       path = path.replace('scss', 'css');
       del(path);
     });
