@@ -44,6 +44,14 @@
           </li>
         </ul>
       </nav> <!-- g-nav_end -->
+      <!-- hamburger button -->
+      <div class="p-g-nav--sp">
+        <div class="p-g-nav-openbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div> <!-- nav end -->
     </div>
   </header> <!-- header_end -->
 
@@ -68,7 +76,7 @@
         <div class="p-contact">
           <div class="p-contact-wrapper">
             <p class="p-contact__heading">
-              弊社へのお問い合わせはお電話・メールフォームより承っております。<br>お気軽にご連絡ください。
+              弊社へのお問い合わせは<br class="u-sp-br">お電話・メールフォームより<br class="u-sp-br">承っております。<br>お気軽にご連絡ください。
             </p>
 
             <div class="p-contact__info">
@@ -100,23 +108,23 @@
                 <form action="program.php" method="post" class="p-contact__form">
                   <table>
                     <tbody>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">お名前<span class="u-accent">*</span></th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="name-ja"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">フリガナ<span class="u-accent">*</span</th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="name-kana"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">メールアドレス<span class="u-accent">*</span></th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="email" name="email"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">電話番号<span class="u-accent">*</span></th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="tel" name="tel"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">ご希望の連絡方法<span class="u-accent">*</span></th>
                         <td class="p-contact__form__desc p-contact__form__desc--column">
                           <input class="p-contact__form__desc__item" type="radio" name="contact" value="tel" id="tel"/>
@@ -126,15 +134,15 @@
                           
                         </td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading p-contact__form__heading--company-name">企業・団体名 <span class="p-contact__form__attention">（法人の方はご入力ください。）</span></th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="companu-name"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">ご住所</th>
                         <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="address"></td>
                       </tr>
-                      <tr class="p-contact__form__item c-table__item">
+                      <tr class="p-contact__form__item ">
                         <th class="p-contact__form__heading">お問い合わせ内容<span class="u-accent">*</span></th>
                         <td class="p-contact__form__desc"><textarea class="p-contact__form__desc__item p-contact__form__desc__item--textarea" rows="13" cols="50"></textarea></td>
                       </tr>
@@ -165,22 +173,22 @@
     <!-- nav -->
     <div class="p-footer__nav">
       <ul class="p-footer__nav-list">
-        <li class="p-footer__nav-list__item">
+        <li class="p-footer__nav-list__item u-sp-display-block">
           <a href="../campany/index.html">
             企業概要
           </a>
         </li>
-        <li class="p-footer__nav-list__item">
+        <li class="p-footer__nav-list__item u-sp-display-block">
           <a href="../information/index.html">
             工場の紹介
           </a>
         </li>
-        <li class="p-footer__nav-list__item">
+        <li class="p-footer__nav-list__item u-sp-display-block">
           <a href="../access/index.html">
             アクセス
           </a>
         </li>
-        <li class="p-footer__nav-list__item">
+        <li class="p-footer__nav-list__item u-sp-display-block">
           <a href="../contact/index.html">
             お問い合わせ
           </a>
@@ -202,5 +210,9 @@
       <small>＠２０２１　by　株式会社タケダ海産</small>
     </p>
   </footer>
+
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="../assets/js/nav.js"></script>
 </body>
 </html>
