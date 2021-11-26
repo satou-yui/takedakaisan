@@ -11,6 +11,10 @@
     margin-top: 110px;
     margin-bottom: 110px;
     background: #DADDE3;
+    @include g.tb {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
     @include g.small {
       margin-top: 50px;
       margin-bottom: 100px;

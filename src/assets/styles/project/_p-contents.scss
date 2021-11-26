@@ -16,6 +16,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include g.tb {
+    padding-bottom: 100px;
+  }
   @include g.small {
     width: 90%;
   }

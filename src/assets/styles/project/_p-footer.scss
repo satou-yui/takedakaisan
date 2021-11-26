@@ -4,6 +4,10 @@
 
 .p-footer__logo {
   padding: 30px;
+  @include g.small {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
   & img {
     @include g.small {
       width: 150px;
@@ -33,7 +37,7 @@
       font-size: 1.1em;
       border-right: 1px solid g.$font-color;
       @include g.small {
-        font-size: 1em;
+        font-size: .8em;
         border-right: none;
         border-left:  1px solid g.$font-color;
         margin-bottom: 10px;
@@ -72,6 +76,6 @@
   font-size: 1.3em;
   line-height: 3;
   @include g.small {
-    font-size: 1.1em;
+    font-size: .7em;
   }
 }

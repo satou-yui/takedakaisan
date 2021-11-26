@@ -1,20 +1,35 @@
 @charset "UTF-8";
 
+@use "../global/" as g;
 .p-finish {
   text-align: center;
   font-size: 1.7em;
   letter-spacing: 8px;
   margin-bottom: 50px;
+  @include g.small {
+    font-size: 1.4em;
+  }
   &-detail {
     text-align: center;
     font-size: 1.4em;
     letter-spacing: 3px;
     margin-bottom: 70px;
+    @include g.small {
+      font-size: 1em;
+      line-height: 2;
+    }
   }
   &__top-link {
     display: block;
     text-align: center;
     font-size: 1.2em;
     letter-spacing: 2px;
+    transition: all .3s;
+    @include g.small {
+      font-size: 1.1em;
+    }
+    &:hover {
+      color: #999;
+    }
   }
 }

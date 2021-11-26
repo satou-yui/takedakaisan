@@ -7,6 +7,12 @@
   &-wrapper {
     width: 85%;
     margin: 110px auto 0;
+    @include g.medium {
+      width: 95%;
+    }
+    @include g.small {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -16,6 +22,11 @@
   letter-spacing: 4px;
   line-height: 1.5;
   margin-bottom: 100px;
+  @include g.small {
+    font-size: 1em;
+    line-height: 2;
+    margin-bottom: 60px;
+  }
 }
 
 .p-contact__info {
@@ -24,35 +35,90 @@
       font-size: 1.7em;
       letter-spacing: 3px;
       margin-bottom: 30px;
+      @include g.medium {
+        font-size: 1.3em;
+      }
+      @include g.small {
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
       & span {
         display: inline-block;
         padding-right: 150px;
         border-bottom: 1px solid g.$main-color;
+        @include g.tb {
+          padding-right: 80px;
+        }
+        @include g.medium {
+          padding-right: 40px;
+        }
+        @include g.small {
+          padding-right: 0;
+          width: 80%;
+        }
       }
       & img {
         width: 40px;
+        @include g.medium {
+          width: 30px;
+        }
+        @include g.small {
+          width: 20px;
+        }
       }
     }
     &__text {
       margin-left: 60px;
       margin-bottom: 50px;
       letter-spacing: 3px;
+      @include g.medium {
+        margin-left: 40px;
+        margin-right: 30px;
+      }
+      @include g.small {
+        margin-left: 10px;
+        margin-right: 0;
+      }
       
       & img {
         width: 50px;
         margin-bottom: 6px;
-        
+        @include g.medium {
+          width: 40px;
+        }
+        @include g.small {
+          width: 25px;
+        }
       }
       & a {
         font-size: 3.3em;
         line-height: 1;
         margin-left: 5px;
+        @include g.medium {
+          font-size: 2.5em;
+        }
+        @include g.small {
+          font-size: 1.5em;
+          margin-left: 0;
+        }
       }
       &-note {
         margin-left: 65px;
+        @include g.medium {
+          margin-left: 55px;
+        }
+        @include g.small {
+          margin-left: 35px;
+          font-size: .8em;
+          letter-spacing: 1px;
+        }
       }
       &-summary {
         font-size: 1.2em;
+        @include g.small {
+          font-size: .9em;
+        }
       }
     }
   }
@@ -61,13 +127,27 @@
 .p-contact__form {
   width: 88%;
   margin: 80px auto 0;
+  @include g.small {
+    width: 100%;
+  }
   & table {
     width: 100%;
+    display: block;
+  }
+  & tbody {
+    display: block;
   }
   &__item {
     width: 100%;
     line-height: 3;
     display: flex;
+    border-bottom: 1px solid #707070;
+    @include g.medium {
+      display: block;
+      border-bottom: none;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
     &:last-child {
       border: none; /*radioボタン消す*/
     }
@@ -79,9 +159,25 @@
     width: 550px;
     align-self: flex-start;
     position: relative;
-    // padding-bottom: 10px;
+    padding-bottom: 10px;
+    @include g.tb {
+      width: 400px;
+    }
+    @include g.medium {
+      display: block;
+    }
+    @include g.small {
+      width: 100%;
+      font-size: 1em;
+    }
     &--company-name {
       margin-bottom: 20px;
+      @include g.tb {
+        margin-bottom: 30px;
+      }
+      @include g.small {
+        margin-bottom: 20px;
+      }
     }
   }
   &__attention {
@@ -90,12 +186,26 @@
     position: absolute;
     top: 40px;
     left: 0;
+    @include g.tb {
+      font-size: .8em;
+      letter-spacing: 1px;
+    }
+    @include g.medium {
+      top: 30px;
+    }
+    @include g.small {
+      top: 20px;
+    }
   }
   &__desc {
     display: block;
     width: 100%;
     align-self: center;
     position: relative;
+    @include g.medium {
+      display: block;
+    }
+    
     &__item {
       display: block;
       border: 1px solid #707070;
@@ -103,6 +213,9 @@
       width: 100%;
       height: 100%;
       padding: 4px;
+      @include g.small {
+      padding: 2px 10px;
+      }
       &:focus {
         border-color: #000;
         background-color: #f6f8fc;
@@ -112,6 +225,11 @@
         margin: 15px 0;
         resize: none;
         line-height: 1.3;
+        padding: 10px;
+        @include g.small {
+          margin: 0;
+          line-height: 1.2;
+        }
       }
     }
     & input[type=radio] {
@@ -119,10 +237,13 @@
     }
     &--column {
       margin: 20px 0 5px;
+      @include g.medium {
+        margin-top: 0;
+      }
     }
   }
   &__submit {
-    margin: 40px 0;
+    margin-top: 40px;
     text-align: center;
     &-btn {
       background: g.$main-color;
@@ -131,6 +252,11 @@
       font-size: 1.4em;
       color: g.$font-color;
       letter-spacing: 8px;
+      @include g.small {
+        font-size: 1em;
+        padding: 6px 30px;
+        letter-spacing: 3px;
+      }
     }
   }
 }
@@ -143,6 +269,9 @@
   line-height: 1.8;
   font-size: 1.3em;
   box-sizing: border-box;
+  @include g.small {
+    font-size: 1em;
+  }
 }
 
 .p-contact__form__desc-radio::before,
@@ -151,6 +280,9 @@
     content: ""; 
     display: block; 
     top: 45%; 
+    @include g.small {
+      top: 50%;
+    }
 }
 
 .p-contact__form__desc-radio::after {
@@ -160,6 +292,11 @@
   height: 19px; 
   border: 1px solid #707070; 
   border-radius: 50%; 
+  @include g.small {
+    width: 15px;
+    height: 15px;
+    left: 5px;
+  }
 }
 
 .p-contact__form__desc-radio::before {
@@ -170,6 +307,11 @@
   background: g.$main-color;
   border-radius: 50%; 
   opacity: 0; 
+  @include g.small {
+    left: 8px;
+    width: 9px;
+    height: 9px;
+  }
 }
 
 input[type=radio]:checked + .p-contact__form__desc-radio::before {

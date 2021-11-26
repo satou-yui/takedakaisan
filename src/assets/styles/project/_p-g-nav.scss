@@ -33,7 +33,8 @@
     }
     @include g.small {
       display: block;
-      width: 65%;
+      width: 80%;
+      margin-top: 80px;
     }
     &__item {
       font-size: 1.3em;
@@ -48,11 +49,11 @@
         width: 23%;
       }
       @include g.small {
-        text-align: left;
-        width: 100%;
-        margin: 10px 0 10px;
-        border-left: none;
-        padding: 0;
+        margin: 0 auto 30px;
+        padding-bottom: 3px;
+        width: 45%;
+        text-align: center;
+        letter-spacing: 3px;
       }
 
       &::after {
@@ -77,12 +78,7 @@
       }
     }
     @include g.small {
-      color: #fff;
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: bold;
-      margin-left: 30px;
+      
     }
     & a {
       display: block;

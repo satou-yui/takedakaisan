@@ -48,30 +48,38 @@
     <!-- header 
   =========================-->
     <header class="l-header">
-      <div class="l-header__wrapper">
-        <h1 class="l-header__logo">
+      <div class="p-header">
+        <h1 class="p-header__logo">
           <img src="assets/images/logo.png" alt="logo">
         </h1>
         <!-- g-nav -->
-        <nav class="c-g-nav">
-          <ul class="c-g-nav-list">
-            <li class="c-g-nav-list__item">
-              <a class="c-g-nav-list__item--link" href="#">会社概要</a>
+        <nav class="p-g-nav">
+          <ul class="p-g-nav-list">
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="campany/index.html">企業概要</a>
             </li>
-            <li class="c-g-nav-list__item">
-              <a class="c-g-nav-list__item--link" href="#">工場の照会</a>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="information/index.html">工場の紹介</a>
             </li>
-            <li class="c-g-nav-list__item">
-              <a class="c-g-nav-list__item--link" href="#">アクセス</a>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="access/index.html">アクセス</a>
             </li>
-            <li class="c-g-nav-list__item">
-              <a class="c-g-nav-list__item--link" href="#">お問い合わせ</a>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="contact/index.html">お問い合わせ</a>
             </li>
           </ul>
         </nav> <!-- g-nav_end -->
+        <!-- hamburger button -->
+        <div class="p-g-nav--sp">
+          <div class="p-g-nav-openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div> <!-- nav end -->
       </div>
     </header> <!-- header_end -->
-    <main class="main">
+    <main>
       <!-- main-visual
     =========================-->
       <div class="p-main-visual">
@@ -81,16 +89,16 @@
     =========================-->
       <section class="p-services">
         <!-- heading -->
-        <div class="p-services__back">
+        <div class="p-services__background">
           <h2 class="c-heading"> 事業紹介 </h2>
         </div>
         <!-- 装飾 -->
+        <img class="p-services__img--kani-top" src="assets/images/kani2.png" alt="kani">
         <div class="p-services__contents">
-          <img class="p-services__img--kani-top" src="assets/images/kani2.png" alt="kani">
           <img class="p-services__img--hokkaidou" src="assets/images/hinomarubrand.png" alt="hokkaidou">
-          <img class="p-services__img--kani-bottom" src="assets/images/kani.png" alt="kani">
-          <p class="p-services__text"> 私たちは、「北海道の海の幸の台所」札幌市中央卸売市場から車で約30分、日本海に面した石狩市という恵まれた環境のもと蟹の加工・販売を主軸とした水産加工会社です。 </p>
+          <p class="p-services__desc"> 私たちは、「北海道の海の幸の台所」<br class="u-sp-br">札幌市中央卸売市場から<br class="u-sp-br">車で約30分、日本海に面した石狩市<br class="u-sp-br">という恵まれた環境のもと<br class="u-sp-br">蟹の加工・販売を主軸とした<br class="u-sp-br">水産加工会社です。 </p>
         </div>
+        <img class="p-services__img--kani-bottom" src="assets/images/kani.png" alt="kani">
       </section>
       <!-- Introduction
     =========================-->
@@ -99,17 +107,102 @@
           <figure class="p-introduction__img">
             <img src="assets/images/top-overview1.png">
           </figure>
-          <div class="p-introduction__text"> 弊社では、大手水産会社等からの委託加工を主軸としておりますが、昨今の食のライフスタイルやニーズの変化に伴うお客様からの多様なご要望にお応えするために2019年に工場を全面改修致しました。 </div>
+          <div class="p-introduction__desc"> 弊社では、大手水産会社等からの<br class="u-sp-br">委託加工を主軸としておりますが<br class="u-sp-br">昨今の食のライフスタイルやニーズの変化に伴うお客様からの<br class="u-sp-br">多様なご要望にお応えするために<br class="u-sp-br">2019年に工場を全面改修致しました。 </div>
         </div>
-        <div class="p-introduction__wrapper p-introduction__wrapper--bg-color02 p-introduction__wrapper--column">
+        <div class="p-introduction__wrapper p-introduction__wrapper--bg-color02 c-reverse">
           <figure class="p-introduction__img">
             <img src="assets/images/top-overview2.png">
           </figure>
-          <div class="p-introduction__text"> 衛生的な施設・充実した設備熟練した技術力を取り揃えて国内産 輸入品、一般消費者様向け・加工 業者様向け等々安心安全をモットーにお客様にご満足いただける様々な商品をお届けして参ります。 </div>
+          <div class="p-introduction__desc"> 衛生的な施設・充実した設備<br class="u-sp-br">熟練した技術力を取り揃えて国内産<br class="u-sp-br">輸入品、一般消費者様向け・加工<br class="u-sp-br">業者様向け等々安心安全をモットー<br class="u-sp-br">にお客様にご満足いただける<br class="u-sp-br">様々な商品をお届けして参ります。 </div>
         </div>
       </div>
-      <!-- navBottom
+      <!-- toc
     =========================-->
+      <div class="p-toc">
+        <ul class="p-toc__category">
+          <li class="p-toc__category__list">
+            <a href="campany/index.html">
+            <img src="assets/images/top-underbutton-company.png" alt="campany">
+            <span class="p-toc__category__list--mask">
+              企業概要
+            </span>
+          </a>
+          </li>
+          <li class="p-toc__category__list">
+            <a href="information/index.html">
+            <img src="assets/images/top-underbutton-factory.png" alt="factory">
+            <span class="p-toc__category__list--mask">
+              工場の紹介
+            </span>
+          </a>
+          </li>
+          <li class="p-toc__category__list">
+            <a href="access/index.html">
+            <img src="assets/images/top-underbutton-access.png" alt="access">
+            <span class="p-toc__category__list--mask">
+              アクセス
+            </span>
+          </a>
+          </li>
+          <li class="p-toc__category__list">
+            <a href="#">
+            <img src="assets/images/top-underbutton-contact.png" alt="contact">
+            <span class="p-toc__category__list--mask">
+              お問い合わせ
+            </span>
+          </a>
+          </li>
+        </ul>
+      </div>
     </main>
+    <!-- footer
+=========================-->
+    <footer class="l-footer">
+      <!-- logo -->
+      <div class="p-footer__logo">
+        <img src="assets/images/logowhite.png" alt="takedakaisan">
+      </div>
+      <!-- nav -->
+      <div class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="campany/index.html">
+          企業概要
+        </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="information/index.html">
+          工場の紹介
+        </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="access/index.html">
+          アクセス
+        </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="contact/index.html">
+          お問い合わせ
+        </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+          サイトポリシー
+        </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+          プライバシーポリシー
+        </a>
+          </li>
+        </ul>
+      </div>
+      <p class="p-footer__copy">
+        <small>＠２０２１　by　株式会社タケダ海産</small>
+      </p>
+    </footer>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タケダ海産　工場の紹介</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <!-- adobe font -->
+    <script>
+      (function(d)
+      {
+        var config = {
+            kitId: 'bls3pey',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function()
+          {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function()
+        {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try
+          {
+            Typekit.load(config)
+          }
+          catch (e)
+          {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <!-- header 
+  =========================-->
+    <header class="l-header">
+      <div class="p-header">
+        <h1 class="p-header__logo">
+          <a href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+        </h1>
+        <!-- g-nav -->
+        <nav class="p-g-nav">
+          <ul class="p-g-nav-list">
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../campany/index.html">企業概要</a>
+            </li>
+            <li class="p-g-nav-list__item  u-active">
+              <a class="p-g-nav-list__item--link" href="#">工場の紹介</a>
+            </li>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../access/index.html">アクセス</a>
+            </li>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../contact/index.html">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav> <!-- g-nav_end -->
+        <!-- hamburger button -->
+        <div class="p-g-nav--sp">
+          <div class="p-g-nav-openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div> <!-- nav end -->
+      </div>
+    </header> <!-- header_end -->
+    <main>
+      <!-- top-visual
+    =========================-->
+      <div class="c-top-visual">
+        <img class="c-top-visual__img" src="../assets/images/factory-header.jpg" alt="">
+      </div>
+      <!-- contents
+    =========================-->
+      <section class="p-contents">
+        <div class="p-contents-wrapper">
+          <!-- heading -->
+          <div class="p-contents__heading-back c-heading-back">
+            <h2 class="c-heading"><span>工場の紹介</span></h2>
+          </div>
+          <!-- point
+        =========================-->
+          <section class="p-point">
+            <!-- heading -->
+            <div class="p-point-wrapper c-contents-inner">
+              <h3 class="p-point__heading">私たちが大切にする4つのポイント</h3>
+              <ul class="p-point__nav">
+                <li class="p-point__nav__list c-heading">
+                  <a href="#hygiene">衛生</a>
+                </li>
+                <li class="p-point__nav__list c-heading">
+                  <a href="#technology">技術</a>
+                </li>
+                <li class="p-point__nav__list c-heading">
+                  <a href="#safety">安全</a>
+                </li>
+                <li class="p-point__nav__list c-heading">
+                  <a href="#institution">施設</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- info
+        =========================-->
+          <section class="p-info">
+            <div class="p-info-wrapper">
+              <div id="hygiene" class="p-info__item">
+                <div class="p-info__item-text">
+                  <h4 class="p-info__item-text__heading">衛生</h4>
+                  <p class="p-info__item-text__desc">5S(整理・整頓・清掃・清潔・躾 (教育))を徹底し原料入荷・製造出荷のすべての工程において、衛生的で効率的な作業環境を維持します。</p>
+                </div>
+                <div class="p-info__item-img">
+                  <img src="../assets/images/factory-point1.png" alt="#">
+                </div>
+              </div>
+              <div id="technology" class="p-info__item c-reverse">
+                <div class="p-info__item-text">
+                  <h4 class="p-info__item-text__heading">技術</h4>
+                  <p class="p-info__item-text__desc">熟練した技術力で、検品・選別・ 箱詰め・凍結・梱包に至る製造を一貫して行っております。<br>急速冷凍機（3Dフリーザー）2機を稼働し、安定した品質で商品をお届け致します。</p>
+                </div>
+                <div class="p-info__item-img">
+                  <img src="../assets/images/factory-point2.png" alt="#">
+                </div>
+              </div>
+              <div id="safety" class="p-info__item">
+                <div class="p-info__item-text">
+                  <h4 class="p-info__item-text__heading">安全</h4>
+                  <p class="p-info__item-text__desc">全数金属検査を実施し、安心安全な商品をお届け致します。<br>​安心安全な商品をお届けできるように細菌の自主検査を実施しております。</p>
+                </div>
+                <div class="p-info__item-img">
+                  <img src="../assets/images/factory-point3.jpg" alt="#">
+                </div>
+              </div>
+              <div id="institution" class="p-info__item c-reverse">
+                <div class="p-info__item-text">
+                  <h4 class="p-info__item-text__heading">施設</h4>
+                  <p class="p-info__item-text__desc">集中温度監視システムで徹底した温度管理を行い、出荷までの間、自社冷凍庫で大事な商品をお預かり致します。<br>自社冷凍庫直結の入出庫ホームで原料入庫・商品出庫の際も品質保持を確保致します。</p>
+                </div>
+                <div class="p-info__item-img">
+                  <img src="../assets/images/factory-point4.jpg" alt="#">
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- footer
+  =========================-->
+    <footer class="l-footer">
+      <!-- logo -->
+      <div class="p-footer__logo">
+        <img src="../assets/images/logowhite.png" alt="takedakaisan">
+      </div>
+      <!-- nav -->
+      <div class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../campany/index.html">
+            企業概要
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../information/index.html">
+            工場の紹介
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../access/index.html">
+            アクセス
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../contact/index.html">
+            お問い合わせ
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+            サイトポリシー
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+            プライバシーポリシー
+          </a>
+          </li>
+        </ul>
+      </div>
+      <p class="p-footer__copy">
+        <small>＠２０２１　by　株式会社タケダ海産</small>
+      </p>
+    </footer>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/nav.js"></script>
+  </body>
+</html>

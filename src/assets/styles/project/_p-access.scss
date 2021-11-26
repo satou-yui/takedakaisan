@@ -17,6 +17,9 @@
   &-table {
     width: max-content;
     margin: 0 auto;
+    @include g.small {
+      width: auto;
+    }
   }
 }
 

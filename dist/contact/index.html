@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タケダ海産　お問い合わせ</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <!-- adobe font -->
+    <script>
+      (function(d)
+      {
+        var config = {
+            kitId: 'bls3pey',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function()
+          {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function()
+        {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try
+          {
+            Typekit.load(config)
+          }
+          catch (e)
+          {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+  </head>
+  <body>
+    <!-- header 
+  =========================-->
+    <header class="l-header">
+      <div class="p-header">
+        <h1 class="p-header__logo">
+          <a href="../index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+        </h1>
+        <!-- g-nav -->
+        <nav class="p-g-nav">
+          <ul class="p-g-nav-list">
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../campany/index.html">企業概要</a>
+            </li>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../information/index.html">工場の紹介</a>
+            </li>
+            <li class="p-g-nav-list__item">
+              <a class="p-g-nav-list__item--link" href="../access/index.html">アクセス</a>
+            </li>
+            <li class="p-g-nav-list__item  u-active">
+              <a class="p-g-nav-list__item--link" href="#">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav> <!-- g-nav_end -->
+        <!-- hamburger button -->
+        <div class="p-g-nav--sp">
+          <div class="p-g-nav-openbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div> <!-- nav end -->
+      </div>
+    </header> <!-- header_end -->
+    <main>
+      <!-- top-visual
+    =========================-->
+      <div class="c-top-visual">
+        <img class="c-top-visual__img" src="../assets/images/contact-header.jpg" alt="#">
+      </div>
+      <!-- contents
+    =========================-->
+      <section class="p-contents">
+        <div class="p-contents-wrapper">
+          <!-- heading -->
+          <div class="p-contents__heading-back c-heading-back">
+            <h2 class="c-heading"><span>お問い合わせ</span></h2>
+          </div>
+          <!-- contact
+        =========================-->
+          <div class="p-contact">
+            <div class="p-contact-wrapper">
+              <p class="p-contact__heading"> 弊社へのお問い合わせは<br class="u-sp-br">お電話・メールフォームより<br class="u-sp-br">承っております。<br>お気軽にご連絡ください。 </p>
+              <div class="p-contact__info">
+                <div class="p-contact__info__item">
+                  <h4 class="p-contact__info__item__heading">
+                    <img src="../assets/images/dot.png" alt="dot">
+                    <span>お電話はこちらから</span>
+                  </h4>
+                  <div class="p-contact__info__item__text">
+                    <img src="../assets/images/tel.png" alt="tel">
+                    <a href="tel:0123-456-789">0123-456-789</a>
+                    <p class="p-contact__info__item__text-note"> 受付時間　09:00~17:00 (月～金曜日) </p>
+                  </div>
+                </div>
+                <div class="p-contact__info__item">
+                  <h4 class="p-contact__info__item__heading">
+                    <img src="../assets/images/dot.png" alt="dot">
+                    <span>メールフォームでのお問い合わせ</span>
+                  </h4>
+                  <div class="p-contact__info__item__text">
+                    <p class="p-contact__info__item__text-summary"> 下記メールフォームより内容を記載の上お送りください。<br>
+                      <span class="u-accent">＊</span>は必須項目です。
+                    </p>
+                  </div>
+                  <form action="program.php" method="post" class="p-contact__form">
+                    <table>
+                      <tbody>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">お名前<span class="u-accent">*</span></th>
+                          <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="name-ja"></td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">フリガナ<span class="u-accent">*</span</th>
+                        <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="name-kana"></td>
+                      </tr>
+                      <tr class="p-contact__form__item ">
+                        <th class="p-contact__form__heading">メールアドレス<span class="u-accent">*</span></th>
+                          <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="email" name="email"></td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">電話番号<span class="u-accent">*</span></th>
+                          <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="tel" name="tel"></td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">ご希望の連絡方法<span class="u-accent">*</span></th>
+                          <td class="p-contact__form__desc p-contact__form__desc--column">
+                            <input class="p-contact__form__desc__item" type="radio" name="contact" value="tel" id="tel" />
+                            <label for="tel" class="p-contact__form__desc-radio">電話</label>
+                            <input class="p-contact__form__desc__item" type="radio" name="contact" value="email" id="email" />
+                            <label for="email" class="p-contact__form__desc-radio">メール</label>
+                          </td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading p-contact__form__heading--company-name">企業・団体名 <span class="p-contact__form__attention">（法人の方はご入力ください。）</span></th>
+                          <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="companu-name"></td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">ご住所</th>
+                          <td class="p-contact__form__desc"><input class="p-contact__form__desc__item" type="text" name="address"></td>
+                        </tr>
+                        <tr class="p-contact__form__item ">
+                          <th class="p-contact__form__heading">お問い合わせ内容<span class="u-accent">*</span></th>
+                          <td class="p-contact__form__desc"><textarea class="p-contact__form__desc__item p-contact__form__desc__item--textarea" rows="13" cols="50"></textarea></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                  <div class="p-contact__form__submit">
+                    <input class="p-contact__form__submit-btn" type="submit" name="submit" value="送信" onclick="location.href='../confirm/index.html'">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer
+  =========================-->
+    <footer class="l-footer">
+      <!-- logo -->
+      <div class="p-footer__logo">
+        <img src="../assets/images/logowhite.png" alt="takedakaisan">
+      </div>
+      <!-- nav -->
+      <div class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../campany/index.html">
+            企業概要
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../information/index.html">
+            工場の紹介
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../access/index.html">
+            アクセス
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item u-sp-display-block">
+            <a href="../contact/index.html">
+            お問い合わせ
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+            サイトポリシー
+          </a>
+          </li>
+          <li class="p-footer__nav-list__item">
+            <a href="#">
+            プライバシーポリシー
+          </a>
+          </li>
+        </ul>
+      </div>
+      <p class="p-footer__copy">
+        <small>＠２０２１　by　株式会社タケダ海産</small>
+      </p>
+    </footer>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/nav.js"></script>
+  </body>
+</html>

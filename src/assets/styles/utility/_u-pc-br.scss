@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@use "../global/" as g;
+
+.u-pc-br {
+  @include g.small {
+    display: none;
+  }
+}
